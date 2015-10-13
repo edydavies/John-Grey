@@ -1,0 +1,352 @@
+
+
+/* Standard styles (fonts, P tags) */
+
+BODY { 
+  color: white; 
+  width: 100%;
+  height: 100%;
+  }
+
+H1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #333333;
+  text-transform: uppercase;
+  font-family: 'Poiret One', cursive;
+  }
+
+H2 { 
+  text-align: center; 
+  color: green; 
+  color: #333333; 
+  font-size: 40px;
+  font-family: arial;
+  }
+
+H3 {
+  font-size: 40px;
+  color:white;
+  text-transform: uppercase;
+  font-family: 'Poiret One', cursive;
+  }
+
+H4 {
+font-size: 20px;
+  color:white;
+    font-family: 'Poiret One', cursive;
+  }
+
+p {
+    font-size: 25px;
+  color:black;
+    font-family: 'Poiret One', cursive;
+}
+
+/* Hyperlinks and roll over states */
+
+a:link {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #00FF00;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+    color: #0000FF;
+    text-decoration: none;
+}
+
+
+/* standard img src settings */
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0.6;
+}
+
+/* does the opacity on the image*/
+
+img:hover {
+    opacity: 1.0;
+}
+
+/* Divs and structure */
+
+#backgroundimage {
+    width:100%;
+    height: 600px;
+    background-image: url("file:///Applications/MAMP/htdocs/See/IMG_0138.JPG");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#backgroundimage_second {
+    width:100%;
+    height: 600px;
+    background-image: url("file:///Applications/MAMP/htdocs/See/IMG_1590.JPG");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+
+#backgroundimage_third {
+    width:100%;
+    height: 600px;
+    background-image: url("file:///Applications/MAMP/htdocs/See/IMG_0392.JPG");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+
+#slogan {
+    width:60%;
+    height: auto;
+     margin-left: auto;
+    margin-right: auto;
+    padding-top: 120px;
+    color: white;
+    text-align: center; 
+    padding-left: 10px;
+    padding-right: 40px;
+}
+
+
+#pagetitle {
+    width:80%;
+    height: auto;
+    padding:1px;
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pagebody {
+    width:70%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 1px black dotted;
+    border-top: 1px black dotted;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#icon {
+    font-size: 30px;
+  color:white;
+  font-family: "Arial";
+}
+
+
+/* Case study structure */
+
+
+#casetudy_box {
+    margin-top: 40px;
+    width:60%;
+    height:300px;
+    text-align: left;
+    margin-bottom: 20px;
+    position: relative;
+    float: right;
+    background-color: #333333;
+}
+
+#casetudy_description {
+    width:70%;
+    height:auto;
+    position: absolute;
+    top:1px;
+    padding-left: 20px;
+    float: right;
+    background-color: #333333;
+}
+
+
+#casetudy_text {
+    margin-top: 40px;
+    width:40%;
+    text-align: center;
+    height:300px;
+    float: left;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+
+/* Menu styling */
+
+#cd-lateral-nav .sub-menu {
+  padding: 0 10px 20px 15px;
+  display: none;
+}
+#cd-lateral-nav a {
+  display: block;
+  width:50px;
+  font-size: 30px;
+  line-height: 2em;
+  font-family: 'Poiret One', cursive;
+  color: white;
+}
+
+ul { 
+  list-style: none; 
+  width:30px;
+}
+
+#cd-lateral-nav {
+  position: fixed;
+  height: 100%;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+  /* the secondary navigation is covered by the main element */
+  z-index: 1;
+  width: 100%;
+  opacity: 0.9;
+  background-color: black;
+  overflow-y: auto;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: -webkit-transform .4s 0s, visibility 0s .4s;
+  -moz-transition: -moz-transform .4s 0s, visibility 0s .4s;
+  transition: transform .4s 0s, visibility 0s .4s;
+  /* this creates the subtle slide in animation of the navigation */
+  -webkit-transform: translateX(80px);
+  -moz-transform: translateX(80px);
+  -ms-transform: translateX(80px);
+  -o-transform: translateX(80px);
+  transform: translateX(80px);
+}
+
+#cd-menu-trigger.is-clicked .cd-menu-icon {
+  background-color: rgba(255, 255, 255, 0);
+}
+#cd-menu-trigger.is-clicked .cd-menu-icon::before, #cd-menu-trigger.is-clicked .cd-menu-icon::after {
+  background-color: white;
+}
+#cd-menu-trigger.is-clicked .cd-menu-icon::before {
+  bottom: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#cd-menu-trigger.is-clicked .cd-menu-icon::after {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+@media only screen and (min-width: 768px) {
+  #cd-menu-trigger {
+    width: 110px;
+    padding-left: 1.25em;
+  }
+  #cd-menu-trigger .cd-menu-text {
+    display: inline-block;
+    line-height: 70px;
+  }
+  #cd-menu-trigger .cd-menu-icon {
+    left: auto;
+    right: 1.25em;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+#cd-lateral-nav.lateral-menu-is-open {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  visibility: visible;
+  -webkit-transition: -webkit-transform .4s 0s, visibility 0s 0s;
+  -moz-transition: -moz-transform .4s 0s, visibility 0s 0s;
+  transition: transform .4s 0s, visibility 0s 0s;
+  /* smooth the scrolling on touch devices - webkit browsers */
+  -webkit-overflow-scrolling: touch;
+}
+
+#cd-menu-trigger {
+  right:10px;
+  width:10px;
+  height:10px;
+  padding:20px;
+  margin-top: 15px;
+  margin-right: 10px;
+  position: fixed;
+  background-image: url("file:///Applications/MAMP/htdocs/See/menuIcon.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  float: right;
+}
+
+/* Footer */
+
+#footer_container {
+    width:80%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footersidebar_left {
+   width: 46%;
+    height: 200px;
+    float: left;
+    border-right: 1px black dotted;
+    text-align: center;
+    padding-right:30px;
+}
+
+#footersidebar_right {
+    width:46%;
+    height: 200px;
+    float:right;
+    position: relative;
+    text-align: center;
+    padding-left:30px;
+}
+
+#footer {
+    width:100%;
+    height: 110px;
+    margin-top: 30px;
+    text-align: center;
+    padding-top: 75px;
+    font-size: 40px;
+    background-color: #333333;
+}
+
+
+
+
+
